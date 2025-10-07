@@ -71,6 +71,7 @@ const SeventyFiveHardPanel = () => {
       reading: false,
       photo: false
     });
+    setProgressPhotos({});
   };
 
   const toggleTask = (task) => {
