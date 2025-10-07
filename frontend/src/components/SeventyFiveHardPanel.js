@@ -94,6 +94,9 @@ const SeventyFiveHardPanel = () => {
   const totalTasks = Object.keys(dailyTasks).length;
   const progressPercentage = Math.round((completedTasks / totalTasks) * 100);
 
+  // Get daily motivational content
+  const dayContent = getDayContent(currentDay);
+
   const tasks = [
     { id: 'workout1', label: '45min Workout #1', icon: Dumbbell, description: 'One must be outdoors' },
     { id: 'workout2', label: '45min Workout #2', icon: Dumbbell, description: 'Any type of training' },
