@@ -1,7 +1,7 @@
 # GO GIRL App - API Contracts & Integration Plan
 
 ## Overview
-A comprehensive habit tracker with regular habits management and 75 Hard challenge functionality. Frontend uses lavender/purple color scheme with mobile-friendly Notion-style UI.
+GO GIRL - A comprehensive habit tracker designed to empower women with regular habits management and 75 Hard challenge functionality. Frontend uses beautiful lavender/purple color scheme with mobile-friendly Notion-style UI.
 
 ## Frontend Features Implemented (Mock Data)
 1. **Daily Habit Tracking** - Checkboxes, progress indicators, streaks
