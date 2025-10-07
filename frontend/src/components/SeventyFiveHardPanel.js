@@ -19,6 +19,8 @@ const SeventyFiveHardPanel = () => {
 
   const [challengeStarted, setChallengeStarted] = useState(false);
   const [startDate, setStartDate] = useState(null);
+  const [showPhotoGallery, setShowPhotoGallery] = useState(false);
+  const [progressPhotos, setProgressPhotos] = useState({});
 
   useEffect(() => {
     const saved75Hard = localStorage.getItem('75hard');
