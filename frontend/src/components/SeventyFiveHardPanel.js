@@ -39,10 +39,11 @@ const SeventyFiveHardPanel = () => {
       started: challengeStarted,
       startDate,
       currentDay,
-      dailyTasks
+      dailyTasks,
+      progressPhotos
     };
     localStorage.setItem('75hard', JSON.stringify(data));
-  }, [challengeStarted, startDate, currentDay, dailyTasks]);
+  }, [challengeStarted, startDate, currentDay, dailyTasks, progressPhotos]);
 
   const startChallenge = () => {
     setChallengeStarted(true);
