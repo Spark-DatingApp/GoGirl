@@ -30,6 +30,7 @@ const SeventyFiveHardPanel = () => {
       setStartDate(data.startDate || null);
       setCurrentDay(data.currentDay || 1);
       setDailyTasks(data.dailyTasks || dailyTasks);
+      setProgressPhotos(data.progressPhotos || {});
     }
   }, []);
 
