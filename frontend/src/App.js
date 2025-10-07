@@ -72,7 +72,7 @@ const App = () => {
                   <div className="w-4 h-4 bg-white rounded-sm"></div>
                 </div>
                 <h1 className="text-xl font-bold text-gray-900 dark:text-white">
-                  HabitTracker
+                  GO GIRL
                 </h1>
               </div>
 
