@@ -322,7 +322,17 @@ const SeventyFiveHardPanel = () => {
                   [currentDay]: `https://images.unsplash.com/photo-${1500000000000 + currentDay}?w=400&h=600&fit=crop&crop=face`
                 }));
               }
+              
+              // Move to next day and reset all tasks
               setCurrentDay(prev => Math.min(prev + 1, 75));
+              setDailyTasks({
+                workout1: false,
+                workout2: false,
+                diet: false,
+                water: false,
+                reading: false,
+                photo: false
+              });
             }}
           >
             Complete Day {currentDay}
