@@ -57,6 +57,12 @@ const SeventyFiveHardPanel = () => {
       reading: false,
       photo: false
     });
+    // Add some mock progress photos for demonstration
+    const mockPhotos = {};
+    for (let i = 1; i <= Math.min(15, 75); i++) {
+      mockPhotos[i] = `https://images.unsplash.com/photo-${1500000000000 + i * 13}?w=400&h=600&fit=crop&crop=face&auto=format`;
+    }
+    setProgressPhotos(mockPhotos);
   };
 
   const resetChallenge = () => {
