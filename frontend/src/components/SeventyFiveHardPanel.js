@@ -276,12 +276,48 @@ const SeventyFiveHardPanel = () => {
           </div>
         </div>
 
+        {/* Progress Photos Section */}
+        {currentDay > 1 && (
+          <div className="bg-white/50 dark:bg-gray-800/50 rounded-lg p-4">
+            <div className="flex items-center justify-between mb-3">
+              <h4 className="font-semibold text-gray-900 dark:text-white flex items-center gap-2">
+                <Images className="w-5 h-5 text-purple-600" />
+                Progress Journey ({Object.keys(progressPhotos).length} photos)
+              </h4>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => setShowPhotoGallery(true)}
+                disabled={Object.keys(progressPhotos).length === 0}
+                className="border-purple-300 text-purple-700 hover:bg-purple-50 dark:border-purple-700 dark:text-purple-300"
+              >
+                <Images className="w-4 h-4 mr-2" />
+                View Gallery
+              </Button>
+            </div>
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              {Object.keys(progressPhotos).length === 0 
+                ? "Start taking daily photos to track your transformation!" 
+                : "See your amazing transformation progress through daily photos."}
+            </p>
+          </div>
+        )}
+
         {/* Action Buttons */}
         <div className="flex gap-3">
           <Button 
             className="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700"
             disabled={completedTasks < totalTasks}
-            onClick={() => setCurrentDay(prev => Math.min(prev + 1, 75))}
+            onClick={() => {
+              // Add mock photo for the completed day
+              if (dailyTasks.photo) {
+                setProgressPhotos(prev => ({
+                  ...prev,
+                  [currentDay]: `https://images.unsplash.com/photo-${1500000000000 + currentDay}?w=400&h=600&fit=crop&crop=face`
+                }));
+              }
+              setCurrentDay(prev => Math.min(prev + 1, 75));
+            }}
           >
             Complete Day {currentDay}
           </Button>
@@ -293,6 +329,15 @@ const SeventyFiveHardPanel = () => {
             Reset
           </Button>
         </div>
+
+        {/* Progress Photo Gallery Modal */}
+        <ProgressPhotoGallery 
+          open={showPhotoGallery}
+          onOpenChange={setShowPhotoGallery}
+          photos={progressPhotos}
+          currentDay={currentDay}
+          startDate={startDate}
+        />
       </CardContent>
     </Card>
   );
