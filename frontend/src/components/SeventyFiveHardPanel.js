@@ -8,6 +8,7 @@ import ProgressPhotoGallery from './ProgressPhotoGallery';
 import { useToast } from '../hooks/use-toast';
 
 const SeventyFiveHardPanel = () => {
+  const { toast } = useToast();
   const [currentDay, setCurrentDay] = useState(1);
   const [dailyTasks, setDailyTasks] = useState({
     workout1: false,
