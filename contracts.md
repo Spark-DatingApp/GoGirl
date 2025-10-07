@@ -60,6 +60,15 @@ PUT /api/75hard/daily
 POST /api/75hard/complete-day
 - Advances to next day (if all tasks complete)
 
+POST /api/75hard/upload-photo
+- Uploads progress photo for current day
+- Body: FormData with image file
+- Returns: { photoUrl: string }
+
+GET /api/75hard/photos
+- Returns all progress photos for user's challenge
+- Response: { [day]: photoUrl }
+
 DELETE /api/75hard/reset
 - Resets challenge completely
 ```
