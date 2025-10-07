@@ -10,6 +10,7 @@ GO GIRL - A comprehensive habit tracker designed to empower women with regular h
 4. **Statistics View** - Progress charts, completion rates, streak analytics
 5. **75 Hard Challenge** - Dedicated panel with 6 daily tasks and progress tracking
    - Daily task reset: When completing a day, all tasks automatically reset to unchecked for the next day
+   - Daily motivational content: Unique inspirational quote and image for each of the 75 days
 6. **Progress Photo Gallery** - View transformation journey through daily photos with timeline, slideshow, and playback controls
 7. **Theme Support** - Light/dark mode toggle
 8. **Responsive Design** - Mobile-friendly navigation
