@@ -50,7 +50,7 @@ const HabitDashboard = () => {
         </div>
         <Button
           onClick={() => setShowAddModal(true)}
-          className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white shadow-lg transition-all duration-200"
+          className="bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white shadow-lg transition-all duration-200"
         >
           <Plus className="w-4 h-4 mr-2" />
           Add Habit
@@ -58,19 +58,19 @@ const HabitDashboard = () => {
       </div>
 
       {/* Progress Overview */}
-      <Card className="bg-gradient-to-br from-blue-50 to-indigo-50 border-blue-200 dark:from-blue-950/30 dark:to-indigo-950/30 dark:border-blue-800">
+      <Card className="bg-gradient-to-br from-purple-50 to-pink-50 border-purple-200 dark:from-purple-950/30 dark:to-pink-950/30 dark:border-purple-800">
         <CardContent className="p-6">
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
               Today's Progress
             </h3>
-            <Badge variant="secondary" className="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300">
+            <Badge variant="secondary" className="bg-purple-100 text-purple-700 dark:bg-purple-900 dark:text-purple-300">
               {todayCompletionRate}% Complete
             </Badge>
           </div>
           <Progress 
             value={todayCompletionRate} 
-            className="h-3 bg-blue-100 dark:bg-blue-900"
+            className="h-3 bg-purple-100 dark:bg-purple-900"
           />
           <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
             {activeHabits.filter(habit => getHabitCompletion(habit.id)).length} of {activeHabits.length} habits completed
@@ -92,7 +92,7 @@ const HabitDashboard = () => {
               </p>
               <Button
                 onClick={() => setShowAddModal(true)}
-                className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700"
+                className="bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700"
               >
                 <Plus className="w-4 h-4 mr-2" />
                 Add Your First Habit
@@ -161,7 +161,7 @@ const HabitDashboard = () => {
                         </div>
                         
                         <div className="flex items-center space-x-1">
-                          <TrendingUp className="w-4 h-4 text-blue-600" />
+                          <TrendingUp className="w-4 h-4 text-purple-600" />
                           <span className="text-gray-700 dark:text-gray-300">
                             {weeklyRate}% this week
                           </span>

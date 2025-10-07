@@ -23,17 +23,17 @@ const AddHabitModal = ({ open, onOpenChange }) => {
     name: '',
     description: '',
     category: 'Health',
-    color: '#E0F2FE'
+    color: '#F3E8FF'
   });
 
   const { addHabit } = useHabits();
 
   const categories = ['Health', 'Fitness', 'Learning', 'Wellness', 'Productivity', 'Social'];
   const colors = [
-    '#E0F2FE', // Light blue
-    '#F0FDF4', // Light green  
-    '#FDF2F8', // Light pink
     '#F3E8FF', // Light purple
+    '#FDF2F8', // Light pink
+    '#F0FDF4', // Light green  
+    '#E0F2FE', // Light blue
     '#FFFBEB', // Light yellow
     '#FEF3C7', // Light amber
     '#ECFDF5', // Light emerald
@@ -53,7 +53,7 @@ const AddHabitModal = ({ open, onOpenChange }) => {
         name: '',
         description: '',
         category: 'Health',
-        color: '#E0F2FE'
+        color: '#F3E8FF'
       });
       onOpenChange(false);
     }
@@ -64,7 +64,7 @@ const AddHabitModal = ({ open, onOpenChange }) => {
       <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2 text-xl">
-            <Sparkles className="w-5 h-5 text-blue-600" />
+            <Sparkles className="w-5 h-5 text-purple-600" />
             Add New Habit
           </DialogTitle>
           <DialogDescription>
@@ -151,7 +151,7 @@ const AddHabitModal = ({ open, onOpenChange }) => {
                       variant={customHabit.category === category ? "default" : "outline"}
                       className={`cursor-pointer transition-all ${
                         customHabit.category === category 
-                          ? 'bg-blue-600 text-white' 
+                          ? 'bg-purple-600 text-white' 
                           : 'hover:bg-gray-100 dark:hover:bg-gray-800'
                       }`}
                       onClick={() => setCustomHabit(prev => ({ ...prev, category }))}
@@ -191,7 +191,7 @@ const AddHabitModal = ({ open, onOpenChange }) => {
                 </Button>
                 <Button 
                   type="submit"
-                  className="flex-1 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700"
+                  className="flex-1 bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700"
                 >
                   <Plus className="w-4 h-4 mr-2" />
                   Create Habit

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { Moon, Sun, Calendar, BarChart3, Home } from "lucide-react";
+import { Moon, Sun, Calendar, BarChart3, Home, Trophy } from "lucide-react";
 import { Button } from "./components/ui/button";
 import { Card } from "./components/ui/card";
 import { Toaster } from "./components/ui/toaster";
@@ -9,6 +9,7 @@ import { HabitProvider } from "./contexts/HabitContext";
 import HabitDashboard from "./components/HabitDashboard";
 import CalendarView from "./components/CalendarView";
 import StatsView from "./components/StatsView";
+import SeventyFiveHardPanel from "./components/SeventyFiveHardPanel";
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -36,6 +37,7 @@ const App = () => {
     { id: 'dashboard', label: 'Today', icon: Home },
     { id: 'calendar', label: 'Calendar', icon: Calendar },
     { id: 'stats', label: 'Statistics', icon: BarChart3 },
+    { id: '75hard', label: '75 HARD', icon: Trophy },
   ];
 
   const renderView = () => {
@@ -44,6 +46,12 @@ const App = () => {
         return <CalendarView />;
       case 'stats':
         return <StatsView />;
+      case '75hard':
+        return (
+          <div className="max-w-4xl mx-auto p-6">
+            <SeventyFiveHardPanel />
+          </div>
+        );
       default:
         return <HabitDashboard />;
     }
@@ -52,7 +60,7 @@ const App = () => {
   return (
     <HabitProvider>
       <div className={`min-h-screen transition-colors duration-300 ${
-        darkMode ? 'dark bg-gray-900' : 'bg-gradient-to-br from-blue-50 via-white to-purple-50'
+        darkMode ? 'dark bg-gray-900' : 'bg-gradient-to-br from-purple-50 via-white to-pink-50'
       }`}>
         {/* Header */}
         <header className="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-700">
@@ -60,7 +68,7 @@ const App = () => {
             <div className="flex items-center justify-between h-16">
               {/* Logo */}
               <div className="flex items-center space-x-3">
-                <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-pink-600 rounded-lg flex items-center justify-center">
                   <div className="w-4 h-4 bg-white rounded-sm"></div>
                 </div>
                 <h1 className="text-xl font-bold text-gray-900 dark:text-white">
@@ -79,7 +87,7 @@ const App = () => {
                       onClick={() => setActiveView(item.id)}
                       className={`flex items-center space-x-2 ${
                         activeView === item.id 
-                          ? 'bg-blue-600 text-white hover:bg-blue-700' 
+                          ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:from-purple-700 hover:to-pink-700' 
                           : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'
                       }`}
                     >
@@ -105,7 +113,7 @@ const App = () => {
 
         {/* Mobile Navigation */}
         <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
-          <div className="grid grid-cols-3 gap-1 p-2">
+          <div className="grid grid-cols-4 gap-1 p-2">
             {navigation.map((item) => {
               const Icon = item.icon;
               return (
@@ -115,7 +123,7 @@ const App = () => {
                   onClick={() => setActiveView(item.id)}
                   className={`flex flex-col items-center space-y-1 h-auto py-2 ${
                     activeView === item.id 
-                      ? 'bg-blue-600 text-white hover:bg-blue-700' 
+                      ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:from-purple-700 hover:to-pink-700' 
                       : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'
                   }`}
                 >

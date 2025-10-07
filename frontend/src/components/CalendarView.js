@@ -78,7 +78,7 @@ const CalendarView = () => {
           <CardHeader>
             <div className="flex items-center justify-between">
               <CardTitle className="flex items-center gap-2">
-                <CalendarIcon className="w-5 h-5 text-blue-600" />
+                <CalendarIcon className="w-5 h-5 text-purple-600" />
                 Habit Calendar
               </CardTitle>
               <div className="flex items-center gap-2">
@@ -149,8 +149,8 @@ const CalendarView = () => {
           </CardHeader>
           <CardContent className="space-y-4">
             {/* Completion Rate */}
-            <div className="text-center p-4 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950/30 dark:to-indigo-950/30 rounded-lg">
-              <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">
+            <div className="text-center p-4 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-950/30 dark:to-pink-950/30 rounded-lg">
+              <div className="text-3xl font-bold text-purple-600 dark:text-purple-400">
                 {selectedDateRate}%
               </div>
               <div className="text-sm text-gray-600 dark:text-gray-400">
