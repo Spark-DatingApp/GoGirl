@@ -117,7 +117,7 @@ const ProgressPhotoGallery = ({ open, onOpenChange, photos, currentDay, startDat
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2">
             <Award className="w-5 h-5 text-purple-600" />
-            Progress Photo Gallery - 75 HARD Journey
+            GO GIRL - 75 HARD Journey
           </DialogTitle>
           <DialogDescription>
             Your incredible transformation through {photoKeys.length} days of dedication.
