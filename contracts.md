@@ -9,8 +9,9 @@ A comprehensive habit tracker with regular habits management and 75 Hard challen
 3. **Calendar View** - Visual habit completion calendar with color coding
 4. **Statistics View** - Progress charts, completion rates, streak analytics
 5. **75 Hard Challenge** - Dedicated panel with 6 daily tasks and progress tracking
-6. **Theme Support** - Light/dark mode toggle
-7. **Responsive Design** - Mobile-friendly navigation
+6. **Progress Photo Gallery** - View transformation journey through daily photos with timeline, slideshow, and playback controls
+7. **Theme Support** - Light/dark mode toggle
+8. **Responsive Design** - Mobile-friendly navigation
 
 ## Mock Data Currently Used
 Located in `/app/frontend/src/mock.js`:
