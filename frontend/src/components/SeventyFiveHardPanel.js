@@ -106,12 +106,7 @@ const SeventyFiveHardPanel = () => {
     { id: 'photo', label: 'Progress Photo', icon: Camera, description: 'Daily progress picture' }
   ];
 
-  const motivationalImages = [
-    'https://images.unsplash.com/photo-1625662171040-8d196a082232?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwxfHxkZXRlcm1pbmF0aW9ufGVufDB8fHx8MTc1OTgxMTg0OXww&ixlib=rb-4.1.0&q=85',
-    'https://images.unsplash.com/photo-1673505411900-f6b228603625?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwyfHxkZXRlcm1pbmF0aW9ufGVufDB8fHx8MTc1OTgxMTg0OXww&ixlib=rb-4.1.0&q=85',
-    'https://images.unsplash.com/photo-1688114361871-1610cb1d51ea?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwyfHxtb3RpdmF0aW9uJTIwZml0bmVzc3xlbnwwfHx8fDE3NTk4MTE4NDN8MA&ixlib=rb-4.1.0&q=85',
-    'https://images.unsplash.com/photo-1515191107209-c28698631303?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwzfHxkZXRlcm1pbmF0aW9ufGVufDB8fHx8MTc1OTgxMTg0OXww&ixlib=rb-4.1.0&q=85'
-  ];
+  // Removed - now using daily motivational content from data file
 
   if (!challengeStarted) {
     return (
