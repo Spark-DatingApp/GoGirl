@@ -111,6 +111,11 @@ DELETE /api/75hard/reset
     reading: Boolean,
     photo: Boolean
   },
+  progressPhotos: {
+    "1": String, // URL to photo for day 1
+    "2": String, // URL to photo for day 2
+    // ... up to day 75
+  },
   completedDays: [Number], // array of completed day numbers
   createdAt: Date,
   updatedAt: Date
