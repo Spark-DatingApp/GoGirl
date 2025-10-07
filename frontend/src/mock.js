@@ -138,10 +138,10 @@ export const mockHabits = [
 ];
 
 export const preConfiguredHabits = [
-  { name: 'Drink 8 glasses of water', description: 'Stay hydrated throughout the day', category: 'Health', color: '#E0F2FE', icon: 'Droplets' },
-  { name: 'Exercise for 30 minutes', description: 'Any form of physical activity', category: 'Fitness', color: '#F0FDF4', icon: 'Dumbbell' },
-  { name: 'Read for 20 minutes', description: 'Read books, articles, or any educational content', category: 'Learning', color: '#FDF2F8', icon: 'BookOpen' },
-  { name: 'Meditate', description: 'Practice mindfulness for 10 minutes', category: 'Wellness', color: '#F3E8FF', icon: 'Brain' },
+  { name: 'Drink 8 glasses of water', description: 'Stay hydrated throughout the day', category: 'Health', color: '#F3E8FF', icon: 'Droplets' },
+  { name: 'Exercise for 30 minutes', description: 'Any form of physical activity', category: 'Fitness', color: '#FDF2F8', icon: 'Dumbbell' },
+  { name: 'Read for 20 minutes', description: 'Read books, articles, or any educational content', category: 'Learning', color: '#F0FDF4', icon: 'BookOpen' },
+  { name: 'Meditate', description: 'Practice mindfulness for 10 minutes', category: 'Wellness', color: '#E0F2FE', icon: 'Brain' },
   { name: 'Take vitamins', description: 'Daily vitamin supplements', category: 'Health', color: '#FFFBEB', icon: 'Pill' },
   { name: 'Write in journal', description: 'Reflect on your day', category: 'Wellness', color: '#FEF3C7', icon: 'PenTool' },
   { name: 'Practice gratitude', description: 'Think of 3 things you are grateful for', category: 'Wellness', color: '#ECFDF5', icon: 'Heart' },
