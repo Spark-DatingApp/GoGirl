@@ -132,18 +132,18 @@ const StatsView = () => {
         <>
           {/* Overview Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <Card className="bg-gradient-to-br from-blue-50 to-indigo-50 border-blue-200 dark:from-blue-950/30 dark:to-indigo-950/30 dark:border-blue-800">
+            <Card className="bg-gradient-to-br from-purple-50 to-pink-50 border-purple-200 dark:from-purple-950/30 dark:to-pink-950/30 dark:border-purple-800">
               <CardContent className="p-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-sm font-medium text-blue-600 dark:text-blue-400">
+                    <p className="text-sm font-medium text-purple-600 dark:text-purple-400">
                       Active Habits
                     </p>
-                    <p className="text-2xl font-bold text-blue-700 dark:text-blue-300">
+                    <p className="text-2xl font-bold text-purple-700 dark:text-purple-300">
                       {stats.totalHabits}
                     </p>
                   </div>
-                  <Target className="w-8 h-8 text-blue-600 dark:text-blue-400" />
+                  <Target className="w-8 h-8 text-purple-600 dark:text-purple-400" />
                 </div>
               </CardContent>
             </Card>
@@ -201,7 +201,7 @@ const StatsView = () => {
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <Calendar className="w-5 h-5 text-blue-600" />
+                <Calendar className="w-5 h-5 text-purple-600" />
                 Weekly Progress
               </CardTitle>
             </CardHeader>
@@ -242,7 +242,7 @@ const StatsView = () => {
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <BarChart3 className="w-5 h-5 text-blue-600" />
+                <BarChart3 className="w-5 h-5 text-purple-600" />
                 Habit Performance
               </CardTitle>
             </CardHeader>
@@ -280,7 +280,7 @@ const StatsView = () => {
                       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
                         <div className="text-center">
                           <p className="text-gray-600 dark:text-gray-400">7-day rate</p>
-                          <p className="font-bold text-lg text-blue-600">{weeklyRate}%</p>
+                          <p className="font-bold text-lg text-purple-600">{weeklyRate}%</p>
                         </div>
                         <div className="text-center">
                           <p className="text-gray-600 dark:text-gray-400">30-day rate</p>
