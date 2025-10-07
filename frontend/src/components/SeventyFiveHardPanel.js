@@ -3,7 +3,8 @@ import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Button } from './ui/button';
 import { Progress } from './ui/progress';
 import { Badge } from './ui/badge';
-import { CheckCircle2, Circle, Trophy, Target, Calendar, BookOpen, Dumbbell, Droplets, Salad, Camera } from 'lucide-react';
+import { CheckCircle2, Circle, Trophy, Target, Calendar, BookOpen, Dumbbell, Droplets, Salad, Camera, Images, ChevronLeft, ChevronRight, Play, Pause } from 'lucide-react';
+import ProgressPhotoGallery from './ProgressPhotoGallery';
 
 const SeventyFiveHardPanel = () => {
   const [currentDay, setCurrentDay] = useState(1);
