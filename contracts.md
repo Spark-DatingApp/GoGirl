@@ -21,6 +21,10 @@ Located in `/app/frontend/src/mock.js`:
 - `preConfiguredHabits` - Template habits users can quickly add
 - `75Hard data` - Stored in localStorage with daily tasks
 
+Located in `/app/frontend/src/data/motivationalContent.js`:
+- `motivationalContent` - 75 unique inspirational quotes and images for daily motivation
+- `getDayContent()` - Function to retrieve content for specific days
+
 ## API Endpoints Needed
 
 ### Habits Management
