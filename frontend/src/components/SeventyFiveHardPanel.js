@@ -129,7 +129,7 @@ const SeventyFiveHardPanel = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-4 mb-6 max-w-lg mx-auto">
+            <div className="grid grid-cols-3 gap-4 mb-6 max-w-2xl mx-auto">
               <div className="text-center p-4 bg-white/50 dark:bg-gray-800/50 rounded-lg">
                 <Target className="w-6 h-6 mx-auto mb-2 text-purple-600" />
                 <div className="font-semibold text-gray-900 dark:text-white">75 Days</div>
@@ -139,6 +139,11 @@ const SeventyFiveHardPanel = () => {
                 <CheckCircle2 className="w-6 h-6 mx-auto mb-2 text-purple-600" />
                 <div className="font-semibold text-gray-900 dark:text-white">6 Tasks</div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">Daily Goals</div>
+              </div>
+              <div className="text-center p-4 bg-white/50 dark:bg-gray-800/50 rounded-lg">
+                <Quote className="w-6 h-6 mx-auto mb-2 text-purple-600" />
+                <div className="font-semibold text-gray-900 dark:text-white">75 Quotes</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">Daily Inspiration</div>
               </div>
             </div>
 
