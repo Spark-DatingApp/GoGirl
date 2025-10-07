@@ -325,16 +325,28 @@ const SeventyFiveHardPanel = () => {
                 }));
               }
               
-              // Move to next day and reset all tasks
-              setCurrentDay(prev => Math.min(prev + 1, 75));
-              setDailyTasks({
-                workout1: false,
-                workout2: false,
-                diet: false,
-                water: false,
-                reading: false,
-                photo: false
+              const nextDay = Math.min(currentDay + 1, 75);
+              
+              // Show success message
+              toast({
+                title: `🎉 Day ${currentDay} Complete!`,
+                description: nextDay <= 75 
+                  ? `Amazing progress! Ready to crush Day ${nextDay}?` 
+                  : "Congratulations! You've completed the 75 HARD challenge!",
               });
+              
+              // Move to next day and reset all tasks
+              setCurrentDay(nextDay);
+              if (nextDay <= 75) {
+                setDailyTasks({
+                  workout1: false,
+                  workout2: false,
+                  diet: false,
+                  water: false,
+                  reading: false,
+                  photo: false
+                });
+              }
             }}
           >
             Complete Day {currentDay}
