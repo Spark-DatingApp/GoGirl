@@ -114,7 +114,7 @@ const SeventyFiveHardPanel = () => {
         <div className="relative">
           <div 
             className="absolute inset-0 bg-cover bg-center opacity-10"
-            style={{ backgroundImage: `url(${motivationalImages[0]})` }}
+            style={{ backgroundImage: `url(${getDayContent(1).image})` }}
           />
           <CardContent className="relative p-8 text-center">
             <div className="mb-6">
