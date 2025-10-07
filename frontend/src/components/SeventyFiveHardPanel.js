@@ -274,17 +274,25 @@ const SeventyFiveHardPanel = () => {
           <Progress value={progressPercentage} className="h-2" />
         </div>
 
-        {/* Motivational Image */}
-        <div className="relative h-32 rounded-lg overflow-hidden">
+        {/* Daily Motivational Content */}
+        <div className="relative h-40 rounded-lg overflow-hidden shadow-lg">
           <img 
-            src={motivationalImages[currentDay % 4]} 
-            alt="Motivation"
+            src={dayContent.image} 
+            alt={`Day ${currentDay} Motivation`}
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
-            <p className="text-white font-semibold p-4 text-sm">
-              "The 75 HARD program is not about fitness. It's about building mental toughness."
-            </p>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex flex-col justify-end">
+            <div className="p-4 space-y-2">
+              <div className="flex items-start space-x-2">
+                <Quote className="w-4 h-4 text-white/80 flex-shrink-0 mt-1" />
+                <blockquote className="text-white font-medium text-sm leading-relaxed">
+                  "{dayContent.quote}"
+                </blockquote>
+              </div>
+              <cite className="text-white/80 text-xs font-medium block text-right">
+                — {dayContent.author}
+              </cite>
+            </div>
           </div>
         </div>
 
